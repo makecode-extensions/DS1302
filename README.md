@@ -75,7 +75,9 @@ reg: 0-30
 
 ## Demo
 
-![](https://raw.githubusercontent.com/microbit-makecode-packages/DS1302/master/demo.jpg)
+![](https://raw.githubusercontent.com/microbit-makecode-packages/DS1302/master/demo.jpg)  
+
+![](https://raw.githubusercontent.com/microbit-makecode-packages/DS1302/master/demo.gif)  
 
 ## License
 

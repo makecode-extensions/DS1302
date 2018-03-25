@@ -310,7 +310,7 @@ namespace DS1302 {
         //% parts="DS1302"
         //% reg.min=0 reg.max=30
         readRam(reg: number): number {
-            return thiis.getReg(DS1302_REG_RAM + 1 + (reg % 31) * 2)
+            return this.getReg(DS1302_REG_RAM + 1 + (reg % 31) * 2)
         }
 
         /**

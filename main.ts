@@ -191,7 +191,7 @@ namespace DS1302 {
         //% weight=72 blockGap=8
         //% parts="DS1302"
         getHour(): number {
-            return HexToDec(this.getReg(DS1302_REG_HOUR + 1))
+            return HexToDec(this.getReg(DS1302_REG_HOUR + 1)) % 24
         }
 
         /**
@@ -213,7 +213,7 @@ namespace DS1302 {
         //% weight=72 blockGap=8
         //% parts="DS1302"
         getMinute(): number {
-            return HexToDec(this.getReg(DS1302_REG_MINUTE + 1) % 60)
+            return HexToDec(this.getReg(DS1302_REG_MINUTE + 1)) % 60
         }
 
         /**
@@ -235,7 +235,7 @@ namespace DS1302 {
         //% weight=70 blockGap=8
         //% parts="DS1302"
         getSecond(): number {
-            return HexToDec(this.getReg(DS1302_REG_SECOND + 1) % 60)
+            return HexToDec(this.getReg(DS1302_REG_SECOND + 1)) % 60
         }
 
         /**

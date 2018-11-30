@@ -24,14 +24,14 @@ namespace DS1302 {
      * convert a Hex data to Dec
      */
     function HexToDec(dat: number): number {
-        return (dat / 16) * 10 + (dat % 16);
+        return (dat >> 4) * 10 + (dat % 16);
     }
 
     /**
      * convert a Dec data to Hex
      */
     function DecToHex(dat: number): number {
-        return (dat / 10) * 16 + (dat % 10)
+        return Math.idiv(dat, 10) * 16 + (dat % 10)
     }
 
     /**

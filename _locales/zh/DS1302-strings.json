@@ -1,0 +1,23 @@
+{
+    "DS1302|block": "DS1302时钟",
+    "DS1302.DS1302RTC.getYear|block": "%ds|读取年",
+    "DS1302.DS1302RTC.setYear|block": "%ds|设置年 %dat",
+    "DS1302.DS1302RTC.getMonth|block": "%ds|读取月",
+    "DS1302.DS1302RTC.setMonth|block": "%ds|设置月 %dat",
+    "DS1302.DS1302RTC.getDay|block": "%ds|读取日",
+    "DS1302.DS1302RTC.setDay|block": "%ds|设置日 %dat",
+    "DS1302.DS1302RTC.getWeekday|block": "%ds|读取星期",
+    "DS1302.DS1302RTC.setWeekday|block": "%ds|设置星期 %dat",
+    "DS1302.DS1302RTC.getHour|block": "%ds|读取时",
+    "DS1302.DS1302RTC.setHour|block": "%ds|设置时 %dat",
+    "DS1302.DS1302RTC.getMinute|block": "%ds|读取分",
+    "DS1302.DS1302RTC.setMinute|block": "%ds|设置分 %dat",
+    "DS1302.DS1302RTC.getSecond|block": "%ds|读取秒",
+    "DS1302.DS1302RTC.setSecond|block": "%ds|设置秒 %dat",
+    "DS1302.DS1302RTC.DateTime|block": "%ds|%ds|设置时间: 年 %year|月 %month|日 %day|星期 %weekday|时 %hour|分 %minute|秒 %second",
+    "DS1302.DS1302RTC.start|block": "%ds|启动时钟",
+    "DS1302.DS1302RTC.pause|block": "%ds|暂停时钟",
+    "DS1302.DS1302RTC.readRam|block": "%ds|读取RAM %reg",
+    "DS1302.DS1302RTC.writeRam|block": "%ds|写入RAM %reg|数据 %dat",
+    "DS1302.create|block": "创建 CLK %clk|DIO %dio|CS %cs"
+}

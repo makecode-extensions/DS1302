@@ -1,6 +1,6 @@
 {
     "name": "DS1302",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "makecode DS1302 RTC Package for micro:bit",
     "license": "MIT",
     "dependencies": {
@@ -8,6 +8,7 @@
     },
     "files": [
         "README.md",
+        "_locales/zh/DS1302-strings.json",
         "ds1302.ts"
     ],
     "testFiles": [

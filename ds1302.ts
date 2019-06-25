@@ -281,7 +281,7 @@ namespace DS1302 {
         }
 
         /**
-         * start ds1302 (go on)
+         * start ds1302 RTC (go on)
          */
         //% blockId="DS1302_start" block="%ds|start RTC"
         //% weight=41 blockGap=8
@@ -292,12 +292,12 @@ namespace DS1302 {
         }
 
         /**
-         * stop ds1302 (pause)
+         * pause ds1302 RTC
          */
         //% blockId="DS1302_pause" block="%ds|pause RTC"
         //% weight=40 blockGap=8
         //% parts="DS1302"
-        stop() {
+        pause() {
             let t = this.getSecond()
             this.setSecond(t | 0x80)
         }

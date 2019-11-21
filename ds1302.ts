@@ -125,9 +125,7 @@ namespace DS1302 {
         //% weight=78 blockGap=8
         //% parts="DS1302"
         getMonth(): number {
-            let d = HexToDec(this.getReg(DS1302_REG_MONTH + 1))
-            if ((d < 1) || (d > 12)) return 1
-            return d
+            return Math.max(Math.min(HexToDec(this.getReg(DS1302_REG_MONTH + 1)), 12), 1)
         }
 
         /**
@@ -149,9 +147,7 @@ namespace DS1302 {
         //% weight=76 blockGap=8
         //% parts="DS1302"
         getDay(): number {
-            let d = HexToDec(this.getReg(DS1302_REG_DAY + 1))
-            if ((d < 1) || (d > 31)) return 1
-            return d
+            return Math.max(Math.min(HexToDec(this.getReg(DS1302_REG_DAY + 1)), 31), 1)
         }
 
         /**
@@ -173,9 +169,7 @@ namespace DS1302 {
         //% weight=74 blockGap=8
         //% parts="DS1302"
         getWeekday(): number {
-            let d = HexToDec(this.getReg(DS1302_REG_WEEKDAY + 1))
-            if ((d < 1) || (d > 7)) return 1
-            return d
+            return Math.max(Math.min(HexToDec(this.getReg(DS1302_REG_WEEKDAY + 1)), 7), 1)
         }
 
         /**

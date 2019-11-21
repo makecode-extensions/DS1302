@@ -7,7 +7,7 @@
 /**
  * DS1302 block
  */
-//% weight=100 color=#A040E0 icon="\uf017" block="RTC DS1302" 
+//% weight=100 color=#A040E0 icon="\uf017" block="RTC DS1302"
 namespace DS1302 {
     let DS1302_REG_SECOND = 0x80
     let DS1302_REG_MINUTE = 0x82
@@ -125,7 +125,9 @@ namespace DS1302 {
         //% weight=78 blockGap=8
         //% parts="DS1302"
         getMonth(): number {
-            return HexToDec(this.getReg(DS1302_REG_MONTH + 1))
+            let d = HexToDec(this.getReg(DS1302_REG_MONTH + 1))
+            if ((d < 1) || (d > 12)) return 1
+            return d
         }
 
         /**
@@ -147,7 +149,9 @@ namespace DS1302 {
         //% weight=76 blockGap=8
         //% parts="DS1302"
         getDay(): number {
-            return HexToDec(this.getReg(DS1302_REG_DAY + 1))
+            let d = HexToDec(this.getReg(DS1302_REG_DAY + 1))
+            if ((d < 1) || (d > 31)) return 1
+            return d
         }
 
         /**
@@ -169,7 +173,9 @@ namespace DS1302 {
         //% weight=74 blockGap=8
         //% parts="DS1302"
         getWeekday(): number {
-            return HexToDec(this.getReg(DS1302_REG_WEEKDAY + 1))
+            let d = HexToDec(this.getReg(DS1302_REG_WEEKDAY + 1))
+            if ((d < 1) || (d > 7)) return 1
+            return d
         }
 
         /**

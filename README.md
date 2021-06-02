@@ -12,7 +12,7 @@ Date:   2018.Mar
 
 open your microbit makecode project, in add extension, paste  
 
-https://github.com/microbit-makecode-packages/DS1302  
+https://github.com/makecode-extensions/DS1302  
 
 to search box then search.
 
@@ -120,4 +120,4 @@ Copyright (c) 2018, microbit/micropython Chinese community
 * for PXT/microbit
 
 
-[From microbit/micropython Chinese community](http://www.micropython.org.cn)
+[From microbit/micropython Chinese community](https://www.micropython.org.cn)
